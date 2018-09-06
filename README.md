@@ -3,6 +3,10 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 
 # Notes
 
+## Bash scripts for startups
+
+Remember to have set up ssh-keys for passwordless entry, otherwise these scripts might fail.
+
 ## Running ROS over VPN
 Since ROS default is resolving ips through dhcp/dns server and the current VPN server does not have it, one needs to:
 on pi:
