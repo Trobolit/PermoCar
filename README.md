@@ -26,3 +26,14 @@ If you cant set serial link setup properly in the program you may need to run th
 ```
 stty -F /dev/ttyACM0 sane raw pass8 -echo -hupcl clocal 57600
 ```
+
+## Uploading .ino files to Arduino from RPI via terminal
+
+There are two arduinos connected, one that is essentially an Uno that drives the motors and one that is arm-based and manages the encoders.
+
+To upload code to the motor-driver the following suffices:
+```
+ .[path to arduino binary]/arduino --upload [path to .ino sketch]/OldArduinoDriver.ino  --port /dev/ttyACM0
+```
+
+To upload to the other additional flags might be needed.
