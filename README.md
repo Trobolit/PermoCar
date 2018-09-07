@@ -20,3 +20,9 @@ And on Laptop run
 export ROS_IP=10.9.0.2
 ```
 before starting nodes that need to communicate over the VPN link.
+
+## Printing to file for serial comm with Arduino
+If you cant set serial link setup properly in the program you may need to run this command on the Pi before running the relayer.
+```
+stty -F /dev/ttyACM0 sane raw pass8 -echo -hupcl clocal 57600
+```
