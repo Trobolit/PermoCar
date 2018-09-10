@@ -1,6 +1,53 @@
 # PermoCar
 Git repo for remake of the PermoCar. This is V3. Developing takes place during course D7039E and E7032E.
 
+# Install instruktions
+
+Using wstool on permo_car_X.rosinstall whil clone all nedde noods!
+permo_car_pc.rosinstall is for the nods needed on the user PC!
+permo_car_rpi.rosInstall is for the nods needed on the rasbery pi!
+### First step
+
+Create a catkin workspace where all the packages will be, together with the source folder.
+
+Example:
+
+```
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws
+catkin init
+catkin config --extend /opt/ros/kinetic
+```
+
+Or one-liner:
+
+```
+cd ~/catkin_ws
+catkin config --mkdirs --extend /opt/ros/kinetic --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_BUILD_TYPE=Release
+```
+
+### Populate src folder using wstool
+
+Go to the catkin workspace:
+
+`cd ~/catkin_ws`
+
+Populate the src folder:
+
+`wstool init src permo_car_X.rosinstall`
+
+### Updating (pulling latest changes)
+
+To update or pull the latest changes run:
+
+`wstool update -t src`
+
+### Finalizing
+
+Now you can build the workspace as normally using `catkin build`.
+
+### repositoris in permo_car.rosinstall
+
 # Notes
 
 ## Bash scripts for startups
@@ -37,3 +84,8 @@ To upload code to the motor-driver the following suffices:
 ```
 
 To upload to the other additional flags might be needed.
+
+## Install file
+
+Format in the .rosinstall file shud be
+`- git: {local-name: NOOD_NAME, uri: 'URL', version: BRANCH}
