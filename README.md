@@ -7,6 +7,8 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 
 Code that polls gamepad: https://github.com/ros-drivers/joystick_drivers/tree/master/joy
 
+Launch file not made. To run: `rosrun joy joy_node _deadzone:=0.1`
+
 ## on pi
 
 # Install instructions
