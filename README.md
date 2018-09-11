@@ -5,7 +5,9 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 
 ## on controller
 
-Code that polls gamepad: https://github.com/ros-drivers/joystick_drivers/tree/master/joy
+To update code/nodes on pc just run the `UpdatePC.sh` in this repo. It will autmatically update your catkin_ws in your home folder.
+
+* Code that polls gamepad: https://github.com/ros-drivers/joystick_drivers/tree/master/joy
 
 Launch file not made. To run: `rosrun joy joy_node _deadzone:=0.1`
 
