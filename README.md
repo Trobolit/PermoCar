@@ -9,6 +9,8 @@ Code that polls gamepad: https://github.com/ros-drivers/joystick_drivers/tree/ma
 
 Launch file not made. To run: `rosrun joy joy_node _deadzone:=0.1`
 
+Note on `rosrun`. For tab completion to work you might need to `source ~/catkin_ws/devel/setup.bash`.
+
 ## on pi
 
 # Install instructions
@@ -57,6 +59,8 @@ To update or pull the latest changes run:
 ### Finalizing
 
 Now you can build the workspace as normally using `catkin build`.
+
+Note: If the command `catkin build` cannot be found you might be missing `python-catkin-tools`. Use `sudo apt-get install python-catkin-tools`.
 
 ## Install file
 
