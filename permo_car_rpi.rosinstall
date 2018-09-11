@@ -1,0 +1,2 @@
+- git: {local-name: EngineMgmt, uri: 'https://github.com/grammers/EngineMgmt.git', version: master}
+
