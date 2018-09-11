@@ -1,1 +1,1 @@
-
+- git: {local-name: PadPub, uri: 'https://github.com/ros-drivers/joystick_drivers.git', version: master}
