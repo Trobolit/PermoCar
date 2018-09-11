@@ -98,3 +98,12 @@ To upload code to the motor-driver the following suffices:
 
 To upload to the other additional flags might be needed.
 
+## Notes from Korken
+* use catkin_simple
+* use catkin build, not catkin make.
+* Dont use rosserial on arduino, make your own bridge instead.
+* Use Ros install files.
+* https://github.com/LTU-CEG
+* On RPI build for release since we are limited on speed.
+* Use one git repo per ROS-node.
+
