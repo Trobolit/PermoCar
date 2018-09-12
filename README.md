@@ -24,6 +24,7 @@ To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autm
 # Node statuses
 | Node          | Who?          | Status      |
 | :------------:|:-------------:|:-----------:|
+| motorcomm_node  | Robert (Trobolit)       | subscribe to Twist ok, now onto serial! |
 | Some node     | Someone       | not started |
 
 
