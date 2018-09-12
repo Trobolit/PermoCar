@@ -15,6 +15,10 @@ Note on `rosrun`. For tab completion to work you might need to `source ~/catkin_
 
 ## on pi
 
+To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autmatically update your catkin_ws in your home folder.
+
+* Code that talks to arduino motor drive: https://github.com/grammers/EngineMgmt
+
 # Install instructions
  
  `wstool` with permo_car_X.rosinstall will clone all needed nodes for you.
