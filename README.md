@@ -7,8 +7,8 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 
 To update code/nodes on pc just run the `UpdatePC.sh` in this repo. It will autmatically update your catkin_ws in your home folder.
 
-* Catkin simple to simplefie CMakeList.txt creation: https://github.com/catkin/catkin_simple.git
-* Code that polls gamepad: https://github.com/ros-drivers/joystick_drivers/tree/master/joy
+* *[catkin_simple](https://github.com/catkin/catkin_simple.git):* Catkin simple to simplefy CMakeList.txt creation.
+* *[joy](https://github.com/ros-drivers/joystick_drivers/tree/master/joy):* Code that polls gamepad (ROS node).
 
 Launch file not made. To run: `rosrun joy joy_node _deadzone:=0.1`
 
@@ -18,8 +18,9 @@ Note on `rosrun`. For tab completion to work you might need to `source ~/catkin_
 
 To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autmatically update your catkin_ws in your home folder.
 
-* Catkin simple to simplefie CMakeList.txt creation: https://github.com/catkin/catkin_simple.git
-* Code that talks to arduino motor drive: https://github.com/grammers/EngineMgmt
+* *[catkin_simple](https://github.com/catkin/catkin_simple.git):* Catkin simple to simplefie CMakeList.txt creation.
+* *[motorcomm](https://github.com/Trobolit/motorcomm):* Code (ROS node) that communicates with the arduino that drives the motors.
+* *[EngineMgmt](https://github.com/grammers/EngineMgmt):* Code (ROS node) that manages motor power (subscribes to controller input, encoder data, etc., and uses that in control loops)
 
 # Node statuses
 | Node          | Who?          | Status      |
