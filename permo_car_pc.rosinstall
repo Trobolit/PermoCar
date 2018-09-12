@@ -1,1 +1,2 @@
+- git: {loval-name: catkin_simple, uri: 'https://github.com/catkin/catkin_simple.git', version: master}
 - git: {local-name: PadPub, uri: 'https://github.com/ros-drivers/joystick_drivers.git', version: master}
