@@ -21,7 +21,7 @@ To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autm
 * Catkin simple to simplefie CMakeList.txt creation: https://github.com/catkin/catkin_simple.git
 * Code that talks to arduino motor drive: https://github.com/grammers/EngineMgmt
 
-# Node status
+# Node statuses
 | Node          | Who?          | Status      |
 | :------------:|:-------------:|:-----------:|
 | Some node     | Someone       | not started |
