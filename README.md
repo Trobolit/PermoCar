@@ -18,6 +18,7 @@ Note on `rosrun`. For tab completion to work you might need to `source ~/catkin_
 
 To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autmatically update your catkin_ws in your home folder.
 
+* Catkin simple to simplefie CMakeList.txt creation: https://github.com/catkin/catkin_simple.git
 * Code that talks to arduino motor drive: https://github.com/grammers/EngineMgmt
 
 # Install instructions
