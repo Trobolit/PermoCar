@@ -27,8 +27,36 @@ To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autm
 | motorcomm_node  | Robert (Trobolit)       | subscribe to Twist ok, now onto serial! |
 | Some node     | Someone       | not started |
 
+# Automatic Install instructions
 
-# Install instructions
+## Set up workspace
+Create a catkin workspace where all the packages will be, together with the source folder.
+
+Example:
+
+```
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws
+catkin init
+catkin config --extend /opt/ros/kinetic
+```
+
+Or one-liner:
+
+```
+cd ~/catkin_ws
+catkin config --mkdirs --extend /opt/ros/kinetic --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -DCMAKE_BUILD_TYPE=Release
+```
+
+## Download and build all relevant nodes
+
+* clone this repo: `git clone https://github.com/Trobolit/PermoCar.git`
+* `cd PermoCar`
+* run the updatefile that you want, e.g. `./UpdatePC.sh`
+
+If you update any source code just run `catkin build` and done!
+
+# Manual Install instructions (discouraged)
  
  `wstool` with permo_car_X.rosinstall will clone all needed nodes for you.
  
