@@ -23,10 +23,11 @@ To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autm
 * *[EngineMgmt](https://github.com/grammers/EngineMgmt):* Code (ROS node) that manages motor power (subscribes to controller input, encoder data, etc., and uses that in control loops)
 
 # Node statuses
-| Node          | Who?          | Status      |
-| :------------:|:-------------:|:-----------:|
-| motorcomm_node  | Robert (Trobolit)       | subscribe to Twist ok, now onto serial! |
-| Some node     | Someone       | not started |
+| Node          | Who?          | Status                   | Comment   |
+|:-------------:|:-------------:|:------------------------:|:---------:|
+| Some node     | Someone       | not started/started/done | how/what? |
+| motorcomm_node  | Robert (Trobolit) |   started    |subscribe to Twist ok, now onto serial! |
+
 
 # Automatic Install instructions
 
