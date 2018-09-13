@@ -1,3 +1,4 @@
 - git: {local-name: catkin_simple, uri: 'https://github.com/catkin/catkin_simple.git', version: master}
 - git: {local-name: engine_mgmt, uri: 'https://github.com/grammers/engine_mgmt.git', version: master}
 - git: {local-name: motorcomm, uri: 'https://github.com/Trobolit/motorcomm.git', version: master}
+- git: {local-name: launch_permocar, uri: 'https://github.com/Trobolit/launch_permocar.git', version: master}
