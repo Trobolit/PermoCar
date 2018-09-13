@@ -11,7 +11,7 @@ To update code/nodes on pc just run the `UpdatePC.sh` in this repo. It will autm
 * *[joy](https://github.com/ros-drivers/joystick_drivers/tree/master/joy):* Code that polls gamepad (ROS node).
 * *[launch_teleop](https://github.com/Trobolit/launch_teleop):* Launchfile to properly start teleop with joy_node.
 
-Launch file not made. To run: `rosrun joy joy_node _deadzone:=0.1`
+To start teleopping: `roslaunch launch_teleop pc_launch.launch`
 
 Note on `rosrun`. For tab completion to work you might need to `source ~/catkin_ws/devel/setup.bash`.
 
@@ -21,7 +21,7 @@ To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autm
 
 * *[catkin_simple](https://github.com/catkin/catkin_simple.git):* Catkin simple to simplefie CMakeList.txt creation.
 * *[motorcomm](https://github.com/Trobolit/motorcomm):* Code (ROS node) that communicates with the arduino that drives the motors.
-* *[EngineMgmt](https://github.com/grammers/EngineMgmt):* Code (ROS node) that manages motor power (subscribes to controller input, encoder data, etc., and uses that in control loops)
+* *[engine_mgmt](https://github.com/grammers/engine_mgmt):* Code (ROS node) that manages motor power (subscribes to controller input, encoder data, etc., and uses that in control loops)
 
 # Node statuses
 | Node          | Who?          | Status                   | Comment   |
