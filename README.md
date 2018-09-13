@@ -9,6 +9,7 @@ To update code/nodes on pc just run the `UpdatePC.sh` in this repo. It will autm
 
 * *[catkin_simple](https://github.com/catkin/catkin_simple.git):* Catkin simple to simplefy CMakeList.txt creation.
 * *[joy](https://github.com/ros-drivers/joystick_drivers/tree/master/joy):* Code that polls gamepad (ROS node).
+* *[launch_teleop](https://github.com/Trobolit/launch_teleop):* Launchfile to properly start teleop with joy_node.
 
 Launch file not made. To run: `rosrun joy joy_node _deadzone:=0.1`
 
