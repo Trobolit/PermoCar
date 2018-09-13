@@ -15,5 +15,5 @@ wstool init src permo_car_rpi.rosinstall
 wstool update -t src
 
 catkin build
-catkin build #Twice makes sure catkin simple acctually makes it through build. Bug?
+#catkin build #Twice makes sure catkin simple acctually makes it through build. Bug?
 rm permo_car_rpi.rosinstall

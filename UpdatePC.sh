@@ -27,5 +27,5 @@ rm -r src/PadPub/wiimote
 fi
 
 catkin build
-catkin build #Twice makes sure catkin simple acctually makes it through build. Bug?
+#catkin build #Twice makes sure catkin simple acctually makes it through build. Bug?
 rm permo_car_pc.rosinstall
