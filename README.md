@@ -26,7 +26,7 @@ To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autm
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
 | Some node     | Someone       | not started/started/done | how/what? |
-| motorcomm_node  | Robert (Trobolit) |   started    |subscribe to Twist ok, now onto serial! |
+| EngineMgmt  | Robert (Trobolit) |   started    | working in branch for drive only |
 
 
 # Automatic Install instructions
