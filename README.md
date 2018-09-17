@@ -24,6 +24,13 @@ To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autm
 * *[engine_mgmt](https://github.com/grammers/engine_mgmt):* Code (ROS node) that manages motor power (subscribes to controller input, encoder data, etc., and uses that in control loops)
 * *[lauch_permocar](https://github.com/Trobolit/launch_permocar):* Launchfile to properly start the permocar.
 
+### Code not yet in node format
+
+* *[permocar_scream](https://github.com/Trobolit/permocar_scream):* The code for the vision system is yet not integrated into ROS.
+It does run paralell with ROS and works.
+
+
+
 # Node statuses
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
