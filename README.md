@@ -25,6 +25,13 @@ To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autm
 * *[lauch_permocar](https://github.com/Trobolit/launch_permocar):* Launchfile to properly start the permocar.
 * *[LMS1xx](https://github.com/grammers/LMS1xx):* lidar node
 
+### Code not yet in node format
+
+* *[permocar_scream](https://github.com/Trobolit/permocar_scream):* The code for the vision system is yet not integrated into ROS.
+It does run paralell with ROS and works.
+
+
+
 # Node statuses
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
