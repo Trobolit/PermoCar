@@ -23,6 +23,7 @@ To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autm
 * *[motorcomm](https://github.com/Trobolit/motorcomm):* Code (ROS node) that communicates with the arduino that drives the motors.
 * *[engine_mgmt](https://github.com/grammers/engine_mgmt):* Code (ROS node) that manages motor power (subscribes to controller input, encoder data, etc., and uses that in control loops)
 * *[lauch_permocar](https://github.com/Trobolit/launch_permocar):* Launchfile to properly start the permocar.
+* *[LMS1xx](https://github.com/grammers/LMS1xx):* lidar node
 
 # Node statuses
 | Node          | Who?          | Status                   | Comment   |
