@@ -36,8 +36,7 @@ It does run paralell with ROS and works.
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
 | Some node     | Someone       | not started/started/done | how/what? |
-| EngineMgmt  | Robert (Trobolit) |   started    | working in branch for drive only |
-
+| Motorcomm  | Robert (Trobolit) |   started    | Finalize comments etc |
 
 # Automatic Install instructions
 
