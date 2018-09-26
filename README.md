@@ -38,7 +38,7 @@ It does run paralell with ROS and works.
 |:-------------:|:-------------:|:------------------------:|:---------:|
 | Some node     | Someone       | not started/started/done | how/what? |
 | Motorcomm  | Robert (Trobolit) |   started    | Finalize comments etc |
-| Coll. Detect| Oscar (Oscarsandstrom) | Not started | Create node |
+| Coll. Detect| Oscar (Oscarsandstrom) | started | Finalize comments etc |
 
 # Automatic Install instructions
 
