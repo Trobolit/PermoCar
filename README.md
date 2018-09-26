@@ -26,12 +26,16 @@ To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autm
 * *[LMS1xx](https://github.com/grammers/LMS1xx):* lidar node
 * *[coll_detect](https://github.com/Oscarsandstrom/coll_detect):* Code (ROS node) that subscribes to the lidar node and checks the ranges array to detect incoming collisions and then publishes a boolean telling other subcribers if it's about to collide.
 
-### Code not yet in node format
+## Code not yet in node format
 
 * *[permocar_scream](https://github.com/Trobolit/permocar_scream):* The code for the vision system is yet not integrated into ROS.
 It does run paralell with ROS and works.
 
 
+## Arduino code
+
+* *[motor_driver](https://github.com/Trobolit/motor_driver):* Code on arduino that controls the motor drivers.
+* *[encoder_listener](https://github.com/Trobolit/encoder_listener):* Code for arduino that listens to the encoders in wheels and decodes it. Will be able to send data to RPI node over serial later.
 
 # Node statuses
 | Node          | Who?          | Status                   | Comment   |
