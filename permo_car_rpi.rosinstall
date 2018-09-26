@@ -3,3 +3,4 @@
 - git: {local-name: motorcomm, uri: 'https://github.com/Trobolit/motorcomm.git', version: master}
 - git: {local-name: launch_permocar, uri: 'https://github.com/Trobolit/launch_permocar.git', version: master}
 - git: {local-name: LMS1xx, uri: 'https://github.com/grammers/LMS1xx.git', version: master}
+- git: {local-name: coll_detect, uri: 'https://github.com/Oscarsandstrom/coll_detect.git', version: master}
