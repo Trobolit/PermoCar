@@ -41,7 +41,10 @@ It does run paralell with ROS and works.
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
 | Some node     | Someone       | not started/started/done | how/what? |
-| Motorcomm  | Robert (Trobolit) |   started    | Finalize comments etc |
+| motorcomm  | Robert (Trobolit) |   started    | Finalize comments etc |
+| encoder_listener  | Robert (Trobolit) |   started    |  |
+| motor_driver  |  |   waiting for review    |  |
+| encodercomm  | Robert (Trobolit) |   started    | Finalize comments etc |
 | Coll. Detect| Oscar (Oscarsandstrom) | started | Finalize comments etc |
 
 # Automatic Install instructions
