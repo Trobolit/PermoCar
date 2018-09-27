@@ -45,7 +45,11 @@ It does run paralell with ROS and works.
 | encoder_listener  | Robert (Trobolit) |   started    |  |
 | motor_driver  |  |   waiting for review    |  |
 | encodercomm  | Robert (Trobolit) |   waiting to start   |  |
-| Coll. Detect| Oscar (Oscarsandstrom) | started | Finalize comments etc |
+| Coll. Detect | Oscar (Oscarsandstrom) | started | testing ongoing |
+| joy | Samuel (grammers) | done | up and running |
+| engine_mgmt | Samuel (collaborative) | running but not finished | waiting for additional inputs |
+| planned nodes | | not started | |
+
 
 # Automatic Install instructions
 
