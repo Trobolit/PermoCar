@@ -25,6 +25,7 @@ To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autm
 * *[lauch_permocar](https://github.com/Trobolit/launch_permocar):* Launchfile to properly start the permocar.
 * *[LMS1xx](https://github.com/grammers/LMS1xx):* lidar node
 * *[coll_detect](https://github.com/Oscarsandstrom/coll_detect):* Code (ROS node) that subscribes to the lidar node and checks the ranges array to detect incoming collisions and then publishes a boolean telling other subcribers if it's about to collide.
+* *[encodercomm](https://github.com/Trobolit/encodercomm.git):* Code that talks serially with the encoder arduino, extracts the data an publishes velocities of the wheels.
 
 ## Code not yet in node format
 
@@ -41,10 +42,10 @@ It does run paralell with ROS and works.
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
 | Some node     | Someone       | not started/started/done | how/what? |
-| motorcomm  | Robert (Trobolit) |   started    | Finalize comments etc |
-| encoder_listener  | Robert (Trobolit) |   started    |  |
+| motorcomm  | Robert (Trobolit) |   waiting for review    | Finalize comments etc |
+| encoder_listener  | Robert (Trobolit) |   started    | Working, may need specialized message to publish. |
 | motor_driver  |  |   waiting for review    |  |
-| encodercomm  | Robert (Trobolit) |   waiting to start   |  |
+| encodercomm  | Robert (Trobolit) |   working   | needs testing and review |
 | Coll. Detect | Oscar (Oscarsandstrom) | started | testing ongoing |
 | joy | Samuel (grammers) | done | up and running |
 | engine_mgmt | Samuel (collaborative) | running but not finished | waiting for additional inputs |
