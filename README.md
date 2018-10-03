@@ -137,6 +137,19 @@ Format in the .rosinstall file shud be
 
 # Notes
 
+## Dialout group (serial permissions)
+
+For ros nodes to be able to communicate over serial ports without modifying file permissions on boot the ros user needs to be in the dialout group. To add a user:
+
+```
+sudo adduser [username] dialout
+```
+
+For one time tests you can also run:
+```
+sudo chmod 666 /dev/tty[portname]
+```
+
 ## Bash scripts for startups
 
 Remember to have set up ssh-keys for passwordless entry, otherwise these scripts might fail.
