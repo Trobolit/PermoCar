@@ -26,6 +26,7 @@ To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autm
 * *[LMS1xx](https://github.com/grammers/LMS1xx):* lidar node
 * *[coll_detect](https://github.com/Oscarsandstrom/coll_detect):* Code (ROS node) that subscribes to the lidar node and checks the ranges array to detect incoming collisions and then publishes a boolean telling other subcribers if it's about to collide.
 * *[encodercomm](https://github.com/Trobolit/encodercomm.git):* Code that talks serially with the encoder arduino, extracts the data an publishes velocities of the wheels.
+* *[nmea_navsat_driver](https://github.com/Trobolit/nmea_navsat_driver):* Code that reads data from serial GPS and publishes according to ROS standard. *Not in launch file yet!*
 
 ## Code not yet in node format
 
