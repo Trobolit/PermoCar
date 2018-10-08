@@ -38,6 +38,7 @@ It does run paralell with ROS and works.
 
 * *[motor_driver](https://github.com/Trobolit/motor_driver):* Code on arduino that controls the motor drivers.
 * *[encoder_listener](https://github.com/Trobolit/encoder_listener):* Code for arduino that listens to the encoders in wheels and decodes it. Will be able to send data to RPI node over serial later.
+* *[relay_setter](https://github.com/Trobolit/relay_setter):* Code on arduino that manages relays. Talks with relaycomm node serially.
 
 # Node statuses
 | Node          | Who?          | Status                   | Comment   |
