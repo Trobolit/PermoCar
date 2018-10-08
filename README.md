@@ -40,6 +40,13 @@ It does run paralell with ROS and works.
 * *[encoder_listener](https://github.com/Trobolit/encoder_listener):* Code for arduino that listens to the encoders in wheels and decodes it. Will be able to send data to RPI node over serial later.
 * *[relay_setter](https://github.com/Trobolit/relay_setter):* Code on arduino that manages relays. Talks with relaycomm node serially.
 
+### Hardware ports for arduinos
+
+* /dev/ttyACM0 - motordriver?
+* /dev/ttyACM1 - relaycomm?
+* /dev/ttyACM2 - encodercomm
+* /dev/ttyUSB0 - nmea_navsat_driver (gps)
+
 # Node statuses
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
