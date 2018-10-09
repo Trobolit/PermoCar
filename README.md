@@ -147,6 +147,11 @@ Format in the .rosinstall file shud be
 
 # Notes
 
+## SICK LMS111 help scripts
+Since the LIDAR may end up in wierd edge cases and the ROS node used *might* (not verified) put it in a bad state, that cannot be adjusted, some python scripts have been made to simplify the factory reset, network setup, and testing of it.
+The scripts are pretty self explainatory and can be found here:
+[LMS111_helpScripts](https://github.com/Trobolit/LMS111_helpScripts)
+
 ## Dialout group (serial permissions)
 
 For ros nodes to be able to communicate over serial ports without modifying file permissions on boot the ros user needs to be in the dialout group. To add a user:
