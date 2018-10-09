@@ -6,3 +6,4 @@
 - git: {local-name: coll_detect, uri: 'https://github.com/Oscarsandstrom/coll_detect.git', version: master}
 - git: {local-name: encodercomm, uri: 'https://github.com/Trobolit/encodercomm.git', version: master}
 - git: {local-name: nmea_navsat_driver, uri: 'https://github.com/Trobolit/nmea_navsat_driver.git', version: master}
+- git: {local-name: relaycomm, uri: 'https://github.com/Trobolit/relaycomm.git', version: master}
