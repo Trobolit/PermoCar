@@ -44,8 +44,8 @@ It does run paralell with ROS and works.
 
 ### Hardware ports for arduinos
 
-* /dev/ttyACM0 - motordriver?
-* /dev/ttyACM1 - relaycomm?
+* /dev/ttyACM0 - relaycomm
+* /dev/ttyACM1 - motordriver
 * /dev/ttyACM2 - encodercomm
 * /dev/ttyUSB0 - nmea_navsat_driver (gps)
 
