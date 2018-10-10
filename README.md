@@ -28,6 +28,7 @@ To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autm
 * *[encodercomm](https://github.com/Trobolit/encodercomm.git):* Code that talks serially with the encoder arduino, extracts the data an publishes velocities of the wheels.
 * *[nmea_navsat_driver](https://github.com/Trobolit/nmea_navsat_driver):* Code that reads data from serial GPS and publishes according to ROS standard. *Not in launch file yet!*
 * *[relaycomm](https://github.com/Trobolit/relaycomm):* Code that communicat with relay arduin. In order to activat/unactivate relays.
+* *[vw_generator](https://github.com/Trobolit/vw_generator):* Code that estimates velocity and angular velocity from encoders.
 
 ## Code not yet in node format
 
