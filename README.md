@@ -54,12 +54,14 @@ It does run paralell with ROS and works.
 |:-------------:|:-------------:|:------------------------:|:---------:|
 | Some node     | Someone       | not started/started/done | how/what? |
 | motorcomm  | Robert (Trobolit) |   waiting for review    | Finalize comments etc |
-| encoder_listener  | Robert (Trobolit) |   started    | Working, may need specialized message to publish. |
+| encoder_listener  | Robert (Trobolit) |   waiting for review    | Working, may need specialized message to publish. |
 | motor_driver  |  |   waiting for review    |  |
 | encodercomm  | Robert (Trobolit) |   working   | needs testing and review |
 | Coll. Detect | Oscar (Oscarsandstrom) | working | testing ongoing |
 | joy | Samuel (grammers) | done | up and running |
 | engine_mgmt | Samuel (collaborative) | running but not finished | waiting for additional inputs |
+| lidar node | Robert | Running, needs cleanup | |
+| relay_comm | Robert, Samuel | Working, not finished | |
 | planned nodes | | not started | |
 
 
