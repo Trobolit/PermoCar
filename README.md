@@ -1,6 +1,61 @@
 # PermoCar
 Git repo for remake of the PermoCar. This is V3. Developing takes place during course D7039E and E7032E.
 
+
+# Node/code statuses
+
+* PC nodes
+* Rpi nodes
+* Arduino code
+* Other code/programs
+
+## PC nodes
+
+| Node          | Who?          | Status                   | Comment   |
+|:-------------:|:-------------:|:------------------------:|:---------:|
+| control_panel | Oscar (Oscarsandstrom) | Just started | message injection in ROS working |
+| PadPub (joy) | Samuel (grammers) | done | up and running |
+| scream_reciever | | not started | not needed? |
+
+
+## Rpi nodes
+
+| Node          | Who?          | Status                   | Comment   |
+|:-------------:|:-------------:|:------------------------:|:---------:|
+| Coll. Detect | Oscar (Oscarsandstrom) | working | testing ongoing |
+| encodercomm  | Robert (Trobolit) |   working   | needs testing and review |
+| engine_mgmt | Samuel (collaborative) | running but not finished | waiting for additional inputs |
+| gyro_node | | no hardware, no code, just an idea | |
+| LMS1xx (lidar node) | Robert | Running, needs cleanup | |
+| motorcomm  | Robert (Trobolit) |   waiting for review    | Finalize comments etc |
+| nmea_navsat_driver | N/A | Finished | |
+| relay_comm | Robert, Samuel | Working, not finished | |
+| scram_sender | | not started | needed? |
+| settings | Samuel (grammers) | initial testing | No contol panel to test against |
+| step_responses | Robert (Trobolit) | not finished | might never need to finish |
+| vw_generator | Robert (Trobolit) | Working, needs review | |
+
+
+
+## Arduino Code
+
+| Node          | Who?          | Status                   | Comment   |
+|:-------------:|:-------------:|:------------------------:|:---------:|
+| encoder_listener  | Robert (Trobolit) |   waiting for review    | Working |
+| motor_driver  | Robert (Trobolit)  |   working, serious bug found   | fix for bug already implemented in relay_setter  |
+| relay_setter | Robert (Trobolit) | waiting for review | |
+
+
+## Other code/programs
+
+| Node          | Who?          | Status                   | Comment   |
+|:-------------:|:-------------:|:------------------------:|:---------:|
+| catkin_simple |  | Ready to use | Build tool |
+| launch_permocar | Rasmus? | working, does not include all nodes yet| |
+| launch_teleop | Rasmus? | working, does not include all nodes yet| |
+| rviz | | ready to use | might need config for gps |
+
+
 # Currently included git repos in install files
 
 ## on controller
@@ -48,21 +103,6 @@ It does run paralell with ROS and works.
 * /dev/ttyACM1 - motordriver
 * /dev/ttyACM2 - encodercomm
 * /dev/ttyUSB0 - nmea_navsat_driver (gps)
-
-# Node statuses
-| Node          | Who?          | Status                   | Comment   |
-|:-------------:|:-------------:|:------------------------:|:---------:|
-| Some node     | Someone       | not started/started/done | how/what? |
-| motorcomm  | Robert (Trobolit) |   waiting for review    | Finalize comments etc |
-| encoder_listener  | Robert (Trobolit) |   waiting for review    | Working, may need specialized message to publish. |
-| motor_driver  |  |   waiting for review    |  |
-| encodercomm  | Robert (Trobolit) |   working   | needs testing and review |
-| Coll. Detect | Oscar (Oscarsandstrom) | working | testing ongoing |
-| joy | Samuel (grammers) | done | up and running |
-| engine_mgmt | Samuel (collaborative) | running but not finished | waiting for additional inputs |
-| lidar node | Robert | Running, needs cleanup | |
-| relay_comm | Robert, Samuel | Working, not finished | |
-| planned nodes | | not started | |
 
 
 # Automatic Install instructions
