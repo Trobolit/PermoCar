@@ -14,26 +14,26 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
 | control_panel | Oscar (Oscarsandstrom) | Just started | message injection in ROS working |
-| PadPub (joy) | Samuel (grammers) | done | up and running |
-| scream_reciever | | not started | not needed? |
+| [PadPub (joy)](https://github.com/grammers/joystick_drivers) | Samuel (grammers) | done | up and running |
+| [permocar_scream (receiver on pc)](https://github.com/Trobolit/permocar_scream) | | not started | not needed? |
 
 
 ## Rpi nodes
 
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
-| Coll. Detect | Oscar (Oscarsandstrom) | working | testing ongoing |
-| encodercomm  | Robert (Trobolit) |   working   | needs testing and review |
-| engine_mgmt | Samuel (collaborative) | running but not finished | waiting for additional inputs |
+| [coll_detect](https://github.com/Oscarsandstrom/coll_detect) | Oscar (Oscarsandstrom) | working | testing ongoing |
+| [encodercomm](https://github.com/Trobolit/encodercomm.git) | Robert (Trobolit) |   working   | needs testing and review |
+| [engine_mgmt](https://github.com/grammers/engine_mgmt) | Samuel (collaborative) | running but not finished | waiting for additional inputs |
 | gyro_node | | no hardware, no code, just an idea | |
-| LMS1xx (lidar node) | Robert | Running, needs cleanup | |
-| motorcomm  | Robert (Trobolit) |   waiting for review    | Finalize comments etc |
-| nmea_navsat_driver | N/A | Finished | |
-| relay_comm | Robert, Samuel | Working, not finished | |
-| scram_sender | | not started | needed? |
-| settings | Samuel (grammers) | initial testing | No contol panel to test against |
-| step_responses | Robert (Trobolit) | not finished | might never need to finish |
-| vw_generator | Robert (Trobolit) | Working, needs review | |
+| [LMS1xx (lidar node)](https://github.com/grammers/LMS1xx) | Robert | Running, needs cleanup | |
+| [motorcomm](https://github.com/Trobolit/motorcomm) | Robert (Trobolit) |   waiting for review    | Finalize comments etc |
+| [nmea_navsat_driver](https://github.com/Trobolit/nmea_navsat_driver) | N/A | Finished | |
+| [relaycomm](https://github.com/Trobolit/relaycomm) | Robert, Samuel | Working, not finished | |
+| [permocar_scream (sender on Rpi)](https://github.com/Trobolit/permocar_scream) | | not started | needed? |
+| [settings](https://github.com/grammers/settings) | Samuel (grammers) | initial testing | No contol panel to test against |
+| [step_responses](https://github.com/Trobolit/step_responses) | Robert (Trobolit) | not finished | might never need to finish |
+| [vw_generator](https://github.com/Trobolit/vw_generator) | Robert (Trobolit) | Working, needs review | |
 
 
 
@@ -41,22 +41,24 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
-| encoder_listener  | Robert (Trobolit) |   waiting for review    | Working |
-| motor_driver  | Robert (Trobolit)  |   working, serious bug found   | fix for bug already implemented in relay_setter  |
-| relay_setter | Robert (Trobolit) | waiting for review | |
+| [encoder_listener](https://github.com/Trobolit/encoder_listener)  | Robert (Trobolit) |   waiting for review    | Working |
+| [motor_driver](https://github.com/Trobolit/motor_driver)  | Robert (Trobolit)  |   working, serious bug found   | fix for bug already implemented in relay_setter  |
+| [relay_setter](https://github.com/Trobolit/relay_setter) | Robert (Trobolit) | waiting for review | |
 
 
 ## Other code/programs
 
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
-| catkin_simple |  | Ready to use | Build tool |
-| launch_permocar | Rasmus? | working, does not include all nodes yet| |
-| launch_teleop | Rasmus? | working, does not include all nodes yet| |
+| [catkin_simple](https://github.com/catkin/catkin_simple.git) |  | Ready to use | Build tool |
+| [lauch_permocar](https://github.com/Trobolit/launch_permocar) | Rasmus? | working, does not include all nodes yet| |
+| [launch_teleop](https://github.com/Trobolit/launch_teleop) | Rasmus? | working, does not include all nodes yet| |
 | rviz | | ready to use | might need config for gps |
 
 
 # Currently included git repos in install files
+
+Note that this section is **not up to date!**.
 
 ## on controller
 
