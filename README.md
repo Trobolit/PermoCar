@@ -45,6 +45,13 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 | [motor_driver](https://github.com/Trobolit/motor_driver)  | Robert (Trobolit)  |   working, serious bug found   | fix for bug already implemented in relay_setter  |
 | [relay_setter](https://github.com/Trobolit/relay_setter) | Robert (Trobolit) | waiting for review | |
 
+### Hardware ports for arduinos
+
+* /dev/ttyACM0 - relaycomm
+* /dev/ttyACM1 - motordriver
+* /dev/ttyACM2 - encodercomm
+* /dev/ttyUSB0 - nmea_navsat_driver (gps)
+
 
 ## Other code/programs
 
@@ -56,33 +63,27 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 | rviz | | ready to use | might need config for gps |
 
 
-# Currently included git repos in install files
+# Currently included git repos in launch files
 
-Note that this section is **not up to date!**.
+Remember that there are scripts in this repo that automatically sets environment correctly and then calls the launch files.
 
-## on controller
+## on PC/controller
 
 To update code/nodes on pc just run the `UpdatePC.sh` in this repo. It will autmatically update your catkin_ws in your home folder.
 
-* *[catkin_simple](https://github.com/catkin/catkin_simple.git):* Catkin simple to simplefy CMakeList.txt creation.
 * *[joy](https://github.com/ros-drivers/joystick_drivers/tree/master/joy):* Code that polls gamepad (ROS node).
-* *[launch_teleop](https://github.com/Trobolit/launch_teleop):* Launchfile to properly start teleop with joy_node.
-
-To start teleopping: `roslaunch launch_teleop pc_launch.launch`
-
-Note on `rosrun`. For tab completion to work you might need to `source ~/catkin_ws/devel/setup.bash`.
 
 ## on pi
 
 To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autmatically update your catkin_ws in your home folder.
 
-* *[catkin_simple](https://github.com/catkin/catkin_simple.git):* Catkin simple to simplefie CMakeList.txt creation.
 * *[motorcomm](https://github.com/Trobolit/motorcomm):* Code (ROS node) that communicates with the arduino that drives the motors.
 * *[engine_mgmt](https://github.com/grammers/engine_mgmt):* Code (ROS node) that manages motor power (subscribes to controller input, encoder data, etc., and uses that in control loops)
-* *[lauch_permocar](https://github.com/Trobolit/launch_permocar):* Launchfile to properly start the permocar.
 * *[LMS1xx](https://github.com/grammers/LMS1xx):* lidar node
 * *[coll_detect](https://github.com/Oscarsandstrom/coll_detect):* Code (ROS node) that subscribes to the lidar node and checks the ranges array to detect incoming collisions and then publishes a boolean telling other subcribers if it's about to collide.
 * *[encodercomm](https://github.com/Trobolit/encodercomm.git):* Code that talks serially with the encoder arduino, extracts the data an publishes velocities of the wheels.
+
+### Nodes to be added in launch file 
 * *[nmea_navsat_driver](https://github.com/Trobolit/nmea_navsat_driver):* Code that reads data from serial GPS and publishes according to ROS standard. *Not in launch file yet!*
 * *[relaycomm](https://github.com/Trobolit/relaycomm):* Code that communicat with relay arduin. In order to activat/unactivate relays.
 * *[vw_generator](https://github.com/Trobolit/vw_generator):* Code that estimates velocity and angular velocity from encoders.
@@ -91,20 +92,6 @@ To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autm
 
 * *[permocar_scream](https://github.com/Trobolit/permocar_scream):* The code for the vision system is yet not integrated into ROS.
 It does run paralell with ROS and works.
-
-
-## Arduino code
-
-* *[motor_driver](https://github.com/Trobolit/motor_driver):* Code on arduino that controls the motor drivers.
-* *[encoder_listener](https://github.com/Trobolit/encoder_listener):* Code for arduino that listens to the encoders in wheels and decodes it. Will be able to send data to RPI node over serial later.
-* *[relay_setter](https://github.com/Trobolit/relay_setter):* Code on arduino that manages relays. Talks with relaycomm node serially.
-
-### Hardware ports for arduinos
-
-* /dev/ttyACM0 - relaycomm
-* /dev/ttyACM1 - motordriver
-* /dev/ttyACM2 - encodercomm
-* /dev/ttyUSB0 - nmea_navsat_driver (gps)
 
 
 # Automatic Install instructions
