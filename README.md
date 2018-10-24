@@ -58,8 +58,8 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
 | [catkin_simple](https://github.com/catkin/catkin_simple.git) |  | Ready to use | Build tool |
-| [lauch_permocar](https://github.com/Trobolit/launch_permocar) | Rasmus? | working, does not include all nodes yet| |
-| [launch_teleop](https://github.com/Trobolit/launch_teleop) | Rasmus? | working, does not include all nodes yet| |
+| [lauch_permocar](https://github.com/Trobolit/launch_permocar) | Oscar/Rasmus? | working, does not include all nodes yet| |
+| [launch_teleop](https://github.com/Trobolit/launch_teleop) | Oscar/Rasmus? | working, does not include all nodes yet| |
 | rviz | | ready to use | might need config for gps |
 
 
