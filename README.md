@@ -16,6 +16,7 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 | control_panel | Oscar (Oscarsandstrom) | Just started | message injection in ROS working |
 | [PadPub (joy)](https://github.com/grammers/joystick_drivers) | Samuel (grammers) | done | up and running |
 | [permocar_scream (receiver on pc)](https://github.com/Trobolit/permocar_scream) | | not started | not needed? |
+| [RVis (lidar plot)](https://wiki.ros.org/rviz) | Samuel | Working and launchin with seetings | |
 
 
 ## Rpi nodes
@@ -60,7 +61,7 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 | [catkin_simple](https://github.com/catkin/catkin_simple.git) |  | Ready to use | Build tool |
 | [lauch_permocar](https://github.com/Trobolit/launch_permocar) | Oscar/Rasmus? | working, does not include all nodes yet| |
 | [launch_teleop](https://github.com/Trobolit/launch_teleop) | Oscar/Rasmus? | working, does not include all nodes yet| |
-| rviz | | ready to use | might need config for gps |
+| [rviz](https://wiki.ros.org/rviz) | | ready to use | might need config for gps |
 
 
 # Currently included git repos in launch files
@@ -84,9 +85,6 @@ To update code/nodes on pc just run the `UpdatePi.sh` in this repo. It will autm
 * *[encodercomm](https://github.com/Trobolit/encodercomm.git):* Code that talks serially with the encoder arduino, extracts the data an publishes velocities of the wheels.
 
 ### Nodes to be added in launch file 
-* *[nmea_navsat_driver](https://github.com/Trobolit/nmea_navsat_driver):* Code that reads data from serial GPS and publishes according to ROS standard. *Not in launch file yet!*
-* *[relaycomm](https://github.com/Trobolit/relaycomm):* Code that communicat with relay arduin. In order to activat/unactivate relays.
-* *[vw_generator](https://github.com/Trobolit/vw_generator):* Code that estimates velocity and angular velocity from encoders.
 
 ## Code not yet in node format
 
