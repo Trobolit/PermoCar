@@ -13,7 +13,7 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
-| control_panel | Oscar (Oscarsandstrom) | Just started | message injection in ROS working |
+| [control_panel](https://github.com/Oscarsandstrom/control_panel) | Oscar (Oscarsandstrom) | running but rudimentary build | message injection in ROS working |
 | [PadPub (joy)](https://github.com/grammers/joystick_drivers) | Samuel (grammers) | done | up and running |
 | [permocar_scream (receiver on pc)](https://github.com/Trobolit/permocar_scream) | | not started | not needed? |
 | [RVis (lidar plot)](https://wiki.ros.org/rviz) | Samuel | Working and launchin with seetings | |
