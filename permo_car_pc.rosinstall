@@ -1,3 +1,4 @@
 - git: {local-name: catkin_simple, uri: 'https://github.com/catkin/catkin_simple.git', version: master}
 - git: {local-name: PadPub, uri: 'https://github.com/grammers/joystick_drivers.git', version: master}
 - git: {local-name: launch_teleop, uri: 'https://github.com/Trobolit/launch_teleop.git', version: master}
+- git: {local-name: control_panel, uri: 'https://github.com/Oscarsandstrom/control_panel.git', version: master}
