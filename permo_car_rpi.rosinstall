@@ -8,4 +8,4 @@
 - git: {local-name: nmea_navsat_driver, uri: 'https://github.com/Trobolit/nmea_navsat_driver.git', version: master}
 - git: {local-name: relaycomm, uri: 'https://github.com/Trobolit/relaycomm.git', version: master}
 - git: {local-name: vw_generator, uri: 'https://github.com/Trobolit/vw_generator.git', version: master}
-- git: {local-name: settings, uri: 'https://github.com/grammers/settings', version: master}
+- git: {local-name: settings, uri: 'https://github.com/grammers/settings.git', version: master}
