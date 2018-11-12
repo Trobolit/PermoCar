@@ -73,6 +73,7 @@ Remember that there are scripts in this repo that automatically sets environment
 To update code/nodes on pc just run the `UpdatePC.sh` in this repo. It will autmatically update your catkin_ws in your home folder.
 
 * *[joy](https://github.com/ros-drivers/joystick_drivers/tree/master/joy):* Code that polls gamepad (ROS node).
+* *[control_panel](https://github.com/Oscarsandstrom/control_panel):* Code that creates a window with information of the data or topics during runtime.
 
 ## on pi
 
