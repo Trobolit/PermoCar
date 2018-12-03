@@ -2,3 +2,4 @@
 - git: {local-name: PadPub, uri: 'https://github.com/grammers/joystick_drivers.git', version: master}
 - git: {local-name: launch_teleop, uri: 'https://github.com/Trobolit/launch_teleop.git', version: master}
 - git: {local-name: control_panel, uri: 'https://github.com/Oscarsandstrom/control_panel.git', version: master}
+- git: {local-name: hector_slam, uri: 'https://github.com/grammers/hector_slam.git', version: master}
