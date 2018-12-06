@@ -13,7 +13,7 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
-| [control_panel](https://github.com/Oscarsandstrom/control_panel) | Oscar (Oscarsandstrom) | running but rudimentary build | message injection in ROS working |
+| [control_panel](https://github.com/Oscarsandstrom/control_panel) | Oscar (Oscarsandstrom) | Finished | Up and running |
 | [PadPub (joy)](https://github.com/grammers/joystick_drivers) | Samuel (grammers) | done | up and running |
 | [permocar_scream (receiver on pc)](https://github.com/Trobolit/permocar_scream) | | not started | not needed? |
 | [RVis (lidar plot)](https://wiki.ros.org/rviz) | Samuel | Working and launchin with seetings | |
@@ -73,7 +73,7 @@ Remember that there are scripts in this repo that automatically sets environment
 To update code/nodes on pc just run the `UpdatePC.sh` in this repo. It will autmatically update your catkin_ws in your home folder.
 
 * *[joy](https://github.com/ros-drivers/joystick_drivers/tree/master/joy):* Code that polls gamepad (ROS node).
-* *[control_panel](https://github.com/Oscarsandstrom/control_panel):* Code that creates a window with information of the data or topics during runtime.
+* *[control_panel](https://github.com/Oscarsandstrom/control_panel):* Code that creates a window with information of the data or topics during runtime. The control panel requires pygame to function, use sudo apt-get install python-pygame to install pygame.
 
 ## on pi
 
