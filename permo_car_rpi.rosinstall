@@ -9,3 +9,4 @@
 - git: {local-name: relaycomm, uri: 'https://github.com/Trobolit/relaycomm.git', version: master}
 - git: {local-name: vw_generator, uri: 'https://github.com/Trobolit/vw_generator.git', version: master}
 - git: {local-name: settings, uri: 'https://github.com/grammers/settings', version: master}
+- git: {local-name: kalmanfilter, uri: 'https://github.com/grammers/kalmanfilter.git', version: master}

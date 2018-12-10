@@ -3,3 +3,4 @@
 - git: {local-name: launch_teleop, uri: 'https://github.com/Trobolit/launch_teleop.git', version: master}
 - git: {local-name: control_panel, uri: 'https://github.com/Oscarsandstrom/control_panel.git', version: master}
 - git: {local-name: hector_slam, uri: 'https://github.com/grammers/hector_slam.git', version: master}
+- git: {local-name: referens_node, uri: 'https://github.com/grammers/referens_node.git', version: master}
