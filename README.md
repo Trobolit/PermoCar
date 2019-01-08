@@ -64,6 +64,7 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 | [lauch_permocar](https://github.com/Trobolit/launch_permocar) | Oscar/Rasmus? | working, does not include all nodes yet| |
 | [launch_teleop](https://github.com/Trobolit/launch_teleop) | Oscar/Rasmus? | working, does not include all nodes yet| |
 | [rviz](https://wiki.ros.org/rviz) | | ready to use | might need config for gps |
+| [Simulation Repo](https://github.com/lookingflaxy/Permocar_simulations) | Olov Sehlin | Fully functional, probable parameter mismatches | Includes all simulink files for simulating the permocar |
 
 
 # Currently included git repos in launch files
