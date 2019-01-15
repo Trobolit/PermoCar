@@ -15,7 +15,7 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 |:-------------:|:-------------:|:------------------------:|:---------:|
 | [control_panel](https://github.com/Oscarsandstrom/control_panel) | Oscar (Oscarsandstrom) | Finished | Up and running |
 | [PadPub (joy)](https://github.com/grammers/joystick_drivers) | Samuel (grammers) | done | up and running |
-| [permocar_scream (receiver on pc)](https://github.com/Trobolit/permocar_scream) | | not started | not needed? |
+| [permocar_scream (receiver on pc)](https://github.com/Trobolit/permocar_scream) | | launched whith script, not ros | not needed? |
 | [referens_node](https://github.com/grammers/referens_node) | Samuel | up and running | | 
 | [RVis (lidar plot)](https://wiki.ros.org/rviz) | Samuel | Working and launchin with seetings | |
 
@@ -27,16 +27,16 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 | [coll_detect](https://github.com/Oscarsandstrom/coll_detect) | Oscar (Oscarsandstrom) | working | testing ongoing |
 | [encodercomm](https://github.com/Trobolit/encodercomm.git) | Robert (Trobolit) |   working   | needs testing and review |
 | [engine_mgmt](https://github.com/grammers/engine_mgmt) | Samuel (collaborative) | running but not finished | waiting for additional inputs |
-| [kalmanfilter (for v, w and troques)](https://github.com/grammers/kalmanfilter) | Olov Samuel | not tuned | |
+| [kalmanfilter (for v, w and troques)](https://github.com/grammers/kalmanfilter) | Olov Samuel | not tuned | not usable until better model parameters are aquired |
 | gyro_node | | no hardware, no code, just an idea | skiped for time constraint|
-| [LMS1xx (lidar node)](https://github.com/grammers/LMS1xx) | Robert | Running, needs cleanup | |
-| [motorcomm](https://github.com/Trobolit/motorcomm) | Robert (Trobolit) |   waiting for review    | Finalize comments etc |
+| [LMS1xx (lidar node)](https://github.com/grammers/LMS1xx) | Robert | Running| |
+| [motorcomm](https://github.com/Trobolit/motorcomm) | Robert (Trobolit) |   working    | Finalize comments etc |
 | [nmea_navsat_driver](https://github.com/Trobolit/nmea_navsat_driver) | N/A | Finished | |
-| [relaycomm](https://github.com/Trobolit/relaycomm) | Robert, Samuel | Working, not finished | |
-| [permocar_scream (sender on Rpi)](https://github.com/Trobolit/permocar_scream) | | not started | needed? |
-| [settings](https://github.com/grammers/settings) | Samuel (grammers) | initial testing | No contol panel to test against |
-| [step_responses](https://github.com/Trobolit/step_responses) | Robert (Trobolit) | not finished | might never need to finish |
-| [vw_generator](https://github.com/Trobolit/vw_generator) | Robert (Trobolit) | Working, needs review | |
+| [relaycomm](https://github.com/Trobolit/relaycomm) | Robert, Samuel | Working | |
+| [permocar_scream (sender on Rpi)](https://github.com/Trobolit/permocar_scream) | | launched whith script, not ros |
+| [settings](https://github.com/grammers/settings) | Samuel (grammers) | working | No contol panel to test against |
+| [step_responses](https://github.com/Trobolit/step_responses) | Robert (Trobolit) | working | might never need to finish |
+| [vw_generator](https://github.com/Trobolit/vw_generator) | Robert (Trobolit) | Working | |
 
 
 
@@ -44,9 +44,9 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
-| [encoder_listener](https://github.com/Trobolit/encoder_listener)  | Robert (Trobolit) |   waiting for review    | Working |
+| [encoder_listener](https://github.com/Trobolit/encoder_listener)  | Robert (Trobolit) |   working    | Working |
 | [motor_driver](https://github.com/Trobolit/motor_driver)  | Robert (Trobolit)  |   working, serious bug found   | fix for bug already implemented in relay_setter  |
-| [relay_setter](https://github.com/Trobolit/relay_setter) | Robert (Trobolit) | waiting for review | |
+| [relay_setter](https://github.com/Trobolit/relay_setter) | Robert (Trobolit) | working | |
 
 ### Hardware ports for arduinos
 
@@ -61,8 +61,8 @@ Git repo for remake of the PermoCar. This is V3. Developing takes place during c
 | Node          | Who?          | Status                   | Comment   |
 |:-------------:|:-------------:|:------------------------:|:---------:|
 | [catkin_simple](https://github.com/catkin/catkin_simple.git) |  | Ready to use | Build tool |
-| [lauch_permocar](https://github.com/Trobolit/launch_permocar) | Oscar/Rasmus? | working, does not include all nodes yet| |
-| [launch_teleop](https://github.com/Trobolit/launch_teleop) | Oscar/Rasmus? | working, does not include all nodes yet| |
+| [lauch_permocar](https://github.com/Trobolit/launch_permocar) | Oscar/Rasmus? | working| |
+| [launch_teleop](https://github.com/Trobolit/launch_teleop) | Oscar/Rasmus? | working| |
 | [rviz](https://wiki.ros.org/rviz) | | ready to use | might need config for gps |
 | [Simulation Repo](https://github.com/lookingflaxy/Permocar_simulations) | Olov Sehlin | Fully functional, probable parameter mismatches | Includes all simulink files for simulating the permocar |
 
@@ -178,6 +178,14 @@ Note: If the command `catkin build` cannot be found you might be missing `python
 
 Format in the .rosinstall file shud be
 `- git: {local-name: NOOD_NAME, uri: 'URL', version: BRANCH}`
+
+# Run
+To run the permocar use one of the launch scripts.
+To start the entire system use `masterStart.sh` (run it on the PC).
+It is important that you start the permocar part of the system first.
+To start permocar and PC seperat use `startWscream.sh` and `startWscreamTeleop.sh`.
+To start whiteout SCReAM use `startPermoCar.sh` and `startTeleop.sh`.
+If you not connected throe the WPN server can you use `vierdStart.sh` and `vierTele.sh`, but check that the IP are correct.
 
 # Notes
 
