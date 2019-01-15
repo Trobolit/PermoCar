@@ -13,7 +13,7 @@ trap "trap_ctrlc" 2
 
 source ~/catkin_ws/devel/setup.bash
 
-( ssh -t ubuntu@10.9.0.3 '~/PermoCar/startWscream.sh && bash' ) &
+( ssh -T ubuntu@10.9.0.3 '~/PermoCar/startWscream.sh && bash' ) &
 P0=$!
 
 sleep 10
