@@ -15,7 +15,7 @@ source ~/catkin_ws/devel/setup.bash
 
 ( ssh -T ubuntu@10.9.0.3 '~/PermoCar/startWscream.sh && bash' ) &
 P0=$!
-
+echo "Please stop whith ctrl-c, else remote scripts won't stop!"
 sleep 10
 
 export ROS_MASTER_URI="http://10.9.0.3:11311" # Probably not needed
